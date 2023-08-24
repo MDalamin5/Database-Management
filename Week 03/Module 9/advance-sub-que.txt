@@ -1,0 +1,8 @@
+SELECT first_name, last_name, salary
+FROM employees 
+WHERE job_id = ( SELECT job_id
+               	FROM employees
+                WHERE employee_id = 107 and salary >= (SELECT salary 
+                                             FROM employees
+                                             WHERE employee_id = 107)
+               );

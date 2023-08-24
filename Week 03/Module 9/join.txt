@@ -1,0 +1,9 @@
+join on:
+
+SELECT e.first_name, e.last_name, d.department_id
+FROM employees e JOIN departments d ON (e.department_id = d.department_id)
+
+join using
+
+SELECT e.first_name, e.last_name, d.department_id
+FROM employees e JOIN departments d USING(department_id)
