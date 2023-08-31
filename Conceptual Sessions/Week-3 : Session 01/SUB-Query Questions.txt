@@ -1,0 +1,2 @@
+1. Find the employee who's Salary is more than the average Salary earned by all.
+2. Find The employee who earn highest salary in each department
