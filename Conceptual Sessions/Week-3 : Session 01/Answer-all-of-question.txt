@@ -1,0 +1,21 @@
+1. 
+SELECT first_name, last_name, salary
+FROM employees
+WHERE salary > (SELECT AVG(salary)
+                FROM employees)
+
+2.
+SELECT department_id, first_name,last_name, max(salary)
+FROM employees
+GROUP BY department_id
+
+or,
+SELECT first_name,department_id, salary
+FROM employees
+WHERE (department_id, salary) in (SELECT department_id, max(salary)
+                                      FROM employees
+                                  	GROUP by department_id)
+    ORDER by department_id
+                                      
+
+3.
