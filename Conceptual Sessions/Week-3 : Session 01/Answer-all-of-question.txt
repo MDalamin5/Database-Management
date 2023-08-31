@@ -19,3 +19,10 @@ WHERE (department_id, salary) in (SELECT department_id, max(salary)
                                       
 
 3.
+SELECT first_name, last_name, salary, department_id
+FROM employees emp1
+WHERE salary > (SELECT AVG(salary)
+                FROM employees emp2
+                WHERE emp1.department_id = emp2.department_id)
+                
+             ORDER by department_id

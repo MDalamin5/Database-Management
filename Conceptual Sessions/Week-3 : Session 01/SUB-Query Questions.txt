@@ -1,3 +1,8 @@
+#Use Dummy_database content
+just open your xampp and pest all text the you will get complete database
+
 1. Find the employee who's Salary is more than the average Salary earned by all.
 2. Find The employee who earn highest salary in each department
 # Co-related Sub Query
+
+3. Find the employee who's salary is gatter than the average salary of that department
