@@ -6,3 +6,4 @@ just open your xampp and pest all text the you will get complete database
 # Co-related Sub Query
 
 3. Find the employee who's salary is gatter than the average salary of that department
+4. Find 3rd highest salary FROM employee table

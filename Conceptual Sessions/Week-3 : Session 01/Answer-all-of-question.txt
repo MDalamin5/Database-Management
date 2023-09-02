@@ -26,3 +26,10 @@ WHERE salary > (SELECT AVG(salary)
                 WHERE emp1.department_id = emp2.department_id)
                 
              ORDER by department_id
+
+
+SELECT employee_id, salary
+FROM employees e1
+WHERE 3-1 = (SELECT COUNT(DISTINCT salary)
+             FROM employees e2
+             WHERE e2.salary > e1.salary)
