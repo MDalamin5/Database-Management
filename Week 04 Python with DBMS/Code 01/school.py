@@ -5,7 +5,7 @@ import pymysql
 connection = pymysql.connect(
     host = "localhost",
     user= "root",
-    passwd="Alamin@apple10",
+    passwd="enter your local host password",
     database="school",
 )
 
