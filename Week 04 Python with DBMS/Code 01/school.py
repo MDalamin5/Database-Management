@@ -42,14 +42,51 @@ def add_student(name, age, grade):
     print("Student Added Sussfully")
     
 
-def update_grage():
-    pass
+def update_grage(stu_id, new_grade):
+    query = """
+            update students
+            set grade = %s
+            where id = %s
+            """
+    cursor = connection.cursor()
+    cursor.execute(query,(new_grade,stu_id))
+    
+    connection.commit()
+    print("Grage Update Sussfully")
 
-def increase_age():
-    pass
+def increase_age(stu_id, val):
+    query = "select age from students where id = %s"
+    cursor = connection.cursor()
+    cursor.execute(query, (stu_id))
+    
+    age = cursor.fetchone()
+    new_age = age[0] + val
+    
+    cursor.execute(
+                    """
+                        update students
+                        set age = %s
+                        where id = %s
+                    """, (new_age, stu_id)
+    )
+    connection.commit()
+    print('Age update sussfully')
 
 def viewAllStudent():
-    pass
+    query = "select * from students"
+    cursor = connection.cursor()
+    cursor.execute(query)
+    
+    students = cursor.fetchall()
+    # print(student)
+    for student in students:
+        print(f"""
+              ID = {student[0]}
+              Name = {student[1]}
+              Age = {student[2]}
+              Grage = {student[3]}
+              """)
+        
 
 while True:
     print("""
@@ -71,9 +108,13 @@ while True:
         grade = float(input("Enter student grade: "))
         add_student(name,age,grade)
     elif(option == 3):
-        update_grage()
+        stu_id = int(input("Enter the student id which you want to update: "))
+        new_grage = float(input('Enter New grage: '))
+        update_grage(stu_id, new_grage)
     elif(option == 4):
-        increase_age()
+        stu_id = int(input("Enter the student id which you want to update: "))
+        val = int(input("Enter number of age you want to increase: "))
+        increase_age(stu_id, val)
     elif(option == 5):
         viewAllStudent()
     elif(option == 0):
