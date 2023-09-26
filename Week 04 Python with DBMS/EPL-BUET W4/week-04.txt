@@ -1,0 +1,17 @@
+week-4
+6
+select d.department_id, count(e.employee_id)
+from departments d, employees e
+where e.department_id = d.department_id
+group by d.department_id
+order by count(e.employee_id) desc
+
+8.
+
+SELECT
+  department_id,
+  job_id,
+  COUNT(*) AS num_emp,
+  SUM(salary) AS tot_sal
+FROM employees
+GROUP BY department_id, job_id
