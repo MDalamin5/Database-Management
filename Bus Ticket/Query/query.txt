@@ -1,0 +1,44 @@
+Get all passengers and their details:
+
+SELECT * FROM Passengers;
+
+Get the bus routes and their details:
+SELECT * FROM Bus_Routes;
+
+--Find available buses for a specific route:
+SELECT Buses.Bus_Number, Buses.Seating_capacity, Bus_Routes.Starting_Point, Bus_Routes.Destination
+FROM Buses
+JOIN Bus_Routes ON Buses.Bus_Number = Bus_Routes.Route_Number
+WHERE Bus_Routes.Starting_Point = 'Dhaka' AND Bus_Routes.Destination = 'Chittagong';
+
+
+--Retrieve the journey history for a specific passenger:
+SELECT Journey_History.Past_trip, Journey_History.Date, Journey_History.Ticket_details
+FROM Journey_History
+WHERE Journey_History.Passenger_id = 1;
+
+Get the ticket details for a specific passenger:
+SELECT Tickets.Ticket_Number, Tickets.Issue_Date, Tickets.Type_id, Tickets.Pay_method_id, Tickets.Bus_number, Tickets.Schedule_id, Tickets.Discount_id
+FROM Tickets
+WHERE Tickets.Passenger_id = 2;
+
+Calculate the total fare for a specific ticket:
+SELECT Tickets.Ticket_Number, Ticket_Types.Type_Name, (Bus_Routes.Total_Fare - Discount.Amount) AS Final_Fare
+FROM Tickets
+JOIN Ticket_Types ON Tickets.Type_id = Ticket_Types.Type_ID
+JOIN Bus_Routes ON Tickets.Bus_number = Bus_Routes.Route_Number
+JOIN Discount ON Tickets.Discount_id = Discount.Discount_id
+WHERE Tickets.Ticket_Number = 1;
+
+--Find passengers who received a specific award:
+SELECT Passengers.Name, Freedom_Fighter.Fighter_Name, Freedom_Fighter.Award_Received
+FROM Passengers
+JOIN Freedom_Fighter ON Passengers.Passenger_ID = Freedom_Fighter.Passenger_ID
+WHERE Freedom_Fighter.Award_Received = 'Bir Protik';
+
+--Get the available seats on a specific bus:
+SELECT Buses.Bus_Number, Buses.Seating_capacity, COUNT(Bus_Reservation.Seat_Number) AS Occupied_Seats
+FROM Buses
+LEFT JOIN Bus_Reservation ON Buses.Bus_Number = Bus_Reservation.Ticket_number
+WHERE Buses.Bus_Number = 1
+GROUP BY Buses.Bus_Number, Buses.Seating_capacity;

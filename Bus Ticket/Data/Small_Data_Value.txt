@@ -1,0 +1,125 @@
+-- Inserting dummy data into the Passengers table
+INSERT INTO Passengers (Name, Age, Mobile_number, Degree, Institute, Year, Profession)
+VALUES
+    ('Md. Hasan', 25, '01711223344', 'BSc in Computer Science', 'Dhaka University', 2020, 'Student'),
+    ('Sara Ahmed', 28, '01887654321', 'MBA in Finance', 'Dhaka Business School', 2019, 'Service Holder'),
+    ('Kamal Hossain', 40, '01976543210', 'MSc in Electrical Engineering', 'BUET', 2005, 'Businessman');
+
+-- Inserting dummy data into the Student table
+INSERT INTO Student (Passenger_ID, Major, Student_id)
+VALUES
+    (1, 'Computer Science', 1001);
+
+-- Inserting dummy data into the Service_holder table
+INSERT INTO Service_holder (Passenger_ID, Company_Name, Position)
+VALUES
+    (2, 'ABC Bank', 'Manager');
+
+-- Inserting dummy data into the Business_Man table
+INSERT INTO Business_Man (Passenger_ID, Business_Name, Business_Type)
+VALUES
+    (3, 'XYZ Electronics', 'Electronics Manufacturer');
+
+-- Inserting dummy data into the Freedom_Fighter table
+INSERT INTO Freedom_Fighter (Passenger_ID, Fighter_Name, Award_Received)
+VALUES
+    (1, 'Abdul Karim', 'Bir Protik');
+
+-- Inserting dummy data into the Other table
+INSERT INTO Other (Passenger_ID, Descriptions)
+VALUES
+    (2, 'Frequent traveler and enthusiast');
+
+-- Inserting dummy data into the Bus_Routes table
+INSERT INTO Bus_Routes (Starting_Point, Destination, Distance, Total_Fare)
+VALUES
+    ('Dhaka', 'Chittagong', 243, 800.00),
+    ('Dhaka', 'Sylhet', 290, 950.00),
+    ('Chittagong', 'Cox''s Bazar', 152, 600.00);
+
+-- Inserting dummy data into the Buses table
+INSERT INTO Buses (Seating_capacity, Model)
+VALUES
+    (40, 'Volvo A/C Coach'),
+    (30, 'Hino Luxury Bus'),
+    (50, 'Suzuki Mini Bus');
+
+-- Inserting dummy data into the Bus_Stops table
+INSERT INTO Bus_Stops (Name, Location)
+VALUES
+    ('Kamalapur Bus Terminal', 'Dhaka'),
+    ('Sadar Ghat Bus Terminal', 'Chittagong'),
+    ('Sylhet Bus Stand', 'Sylhet');
+
+-- Inserting dummy data into the Bus_Schedule table
+INSERT INTO Bus_Schedule (Departure_Time, Arrival_Time, Route_number)
+VALUES
+    ('2023-10-10 08:00:00', '2023-10-10 16:00:00', 1),
+    ('2023-10-11 09:30:00', '2023-10-11 17:30:00', 2),
+    ('2023-10-10 07:30:00', '2023-10-10 15:30:00', 3);
+
+-- Inserting dummy data into the Ticket_Types table
+INSERT INTO Ticket_Types (Type_Name)
+VALUES
+    ('Standard'),
+    ('VIP'),
+    ('Student');
+
+-- Inserting dummy data into the Payment_Method table
+INSERT INTO Payment_Method (Method_Name)
+VALUES
+    ('Cash'),
+    ('Credit Card'),
+    ('Mobile Banking');
+
+-- Inserting dummy data into the Discount table
+INSERT INTO Discount (Discount_Type, Amount)
+VALUES
+    ('Early Bird', 100.00),
+    ('Senior Citizen', 50.00),
+    ('Student Discount', 75.00);
+
+-- Inserting dummy data into the Tickets table
+INSERT INTO Tickets (Issue_Date, Passenger_id, Type_id, Pay_method_id, Bus_number, Schedule_id, Discount_id)
+VALUES
+    ('2023-10-09', 1, 1, 2, 1, 1, 1),
+    ('2023-10-09', 2, 2, 3, 2, 2, 2),
+    ('2023-10-09', 3, 1, 1, 3, 3, 3);
+
+-- Inserting dummy data into the Journey_History table
+INSERT INTO Journey_History (Past_trip, Date, Ticket_details, Passenger_id)
+VALUES
+    ('Dhaka to Chittagong', '2023-10-10', 'Ticket: Standard', 1),
+    ('Dhaka to Sylhet', '2023-10-11', 'Ticket: VIP', 2),
+    ('Chittagong to Cox''s Bazar', '2023-10-10', 'Ticket: Standard', 1);
+
+-- Inserting dummy data into the Bus_Stations table
+INSERT INTO Bus_Stations (Station_Name, Location)
+VALUES
+    ('Kamalapur Bus Terminal', 'Dhaka'),
+    ('Sadar Ghat Bus Terminal', 'Chittagong'),
+    ('Sylhet Bus Stand', 'Sylhet');
+
+-- Inserting dummy data into the Refund table
+INSERT INTO Refund (Refund_Amount, Reason, Ticket_number)
+VALUES
+    (50.00, 'Cancelled trip', 2),
+    (25.00, 'Overcharged', 3);
+
+-- Inserting dummy data into the Notification table
+INSERT INTO Notification (Message, Notification_type)
+VALUES
+    ('Your bus is arriving in 15 minutes.', 'Reminder'),
+    ('Special discount on VIP tickets this week.', 'Promotion');
+
+-- Inserting dummy data into the Bus_Reservation table
+INSERT INTO Bus_Reservation (Date, Seat_Number, Ticket_number)
+VALUES
+    ('2023-10-09', 10, 1),
+    ('2023-10-09', 5, 2);
+
+-- Inserting dummy data into the Seat table
+INSERT INTO Seat (Seat_Number, Bus_ID)
+VALUES
+    (1, 1),
+    (5, 2);

@@ -1,0 +1,369 @@
+-- Inserting 15 dummy data into the Passengers table
+INSERT INTO Passengers (Name, Age, Mobile_number, Degree, Institute, Year, Profession)
+VALUES
+    ('Md. Ali', 22, '01711223344', 'BSc in Computer Science', 'NSU', 2022, 'Student'),
+    ('Sara Ahmed', 25, '01887654321', 'MBA in Finance', 'DU', 2020, 'Service Holder'),
+    ('Kamal Hossain', 28, '01976543210', 'MSc in Electrical Engineering', 'BUET', 2018, 'Businessman'),
+    ('Tasnim Akter', 21, '01698765432', 'BBA in Marketing', 'IUB', 2023, 'Student'),
+    ('Mohan Das', 35, '01587654321', 'Ph.D. in Physics', 'JU', 2010, 'Professor'),
+    ('Farida Rahman', 26, '01711224455', 'LLB', 'RU', 2017, 'Lawyer'),
+    ('Karim Khan', 29, '01811223344', 'MBBS', 'BSMMU', 2016, 'Doctor'),
+    ('Nusrat Jahan', 23, '01798989898', 'BEng in Civil Engineering', 'KUET', 2021, 'Engineer'),
+    ('Nazmul Islam', 30, '01977777777', 'MBA in HRM', 'IUB', 2015, 'HR Manager'),
+    ('Sakib Ahmed', 24, '01556666777', 'BSc in Biochemistry', 'DU', 2022, 'Student'),
+    ('Rubina Akter', 27, '01711223366', 'MBA in Marketing', 'NSU', 2019, 'Marketing Manager'),
+    ('Rahul Hossain', 38, '01888888888', 'MSc in Economics', 'JU', 2011, 'Economist'),
+    ('Sima Begum', 31, '01777778888', 'Ph.D. in Chemistry', 'DU', 2014, 'Researcher'),
+    ('Tahmid Khan', 25, '01666662222', 'BSc in CSE', 'BUET', 2021, 'Software Engineer'),
+    ('Sadia Rahman', 29, '01887776666', 'MBA in Finance', 'IUB', 2017, 'Financial Analyst');
+
+-- Inserting 15 dummy data into the Student table
+INSERT INTO Student (Passenger_ID, Major, Student_id)
+VALUES
+    (1, 'Computer Science', 1001),
+    (4, 'Business Administration', 1002),
+    (10, 'Computer Science', 1003),
+    (14, 'Computer Science', 1004),
+    (3, 'Electrical Engineering', 1005),
+    (13, 'Chemistry', 1006),
+    (7, 'Medicine', 1007),
+    (9, 'Civil Engineering', 1008),
+    (12, 'Economics', 1009),
+    (2, 'Business Administration', 1010),
+    (5, 'Physics', 1011),
+    (8, 'Law', 1012),
+    (6, 'Medicine', 1013),
+    (11, 'Computer Science', 1014),
+    (15, 'Finance', 1015);
+
+-- Inserting 15 dummy data into the Service_holder table
+INSERT INTO Service_holder (Passenger_ID, Company_Name, Position)
+VALUES
+    (2, 'ABC Bank', 'Manager'),
+    (9, 'XYZ Corporation', 'CEO'),
+    (10, 'ACME Group', 'HR Manager'),
+    (4, 'XYZ Bank', 'Finance Analyst'),
+    (5, 'PowerTech Ltd.', 'Electrical Engineer'),
+    (7, 'City Law Firm', 'Lawyer'),
+    (12, 'HealthCare Hospital', 'Surgeon'),
+    (6, 'Tech Solutions Ltd.', 'Software Developer'),
+    (13, 'Economic Research Institute', 'Researcher'),
+    (3, 'ABC Electronics', 'Sales Manager'),
+    (15, 'FinanceCorp Ltd.', 'Financial Analyst'),
+    (8, 'Economic Think Tank', 'Economist'),
+    (14, 'SoftwareTech Ltd.', 'Software Engineer'),
+    (11, 'ABC Finance', 'Financial Advisor'),
+    (1, 'XYZ Bank', 'Accountant');
+
+-- Inserting 15 dummy data into the Business_Man table
+INSERT INTO Business_Man (Passenger_ID, Business_Name, Business_Type)
+VALUES
+    (3, 'XYZ Electronics', 'Electronics Manufacturer'),
+    (7, 'Tech Solutions Ltd.', 'Software Development'),
+    (9, 'ACME Group', 'Diversified'),
+    (6, 'City Law Firm', 'Legal Services'),
+    (11, 'FinanceCorp Ltd.', 'Financial Services'),
+    (14, 'SoftwareTech Ltd.', 'Software Development'),
+    (10, 'PowerTech Ltd.', 'Electrical Engineering'),
+    (12, 'HealthCare Hospital', 'Healthcare'),
+    (8, 'Economic Think Tank', 'Research'),
+    (15, 'ABC Finance', 'Financial Services'),
+    (2, 'ABC Bank', 'Banking'),
+    (13, 'Economic Research Institute', 'Research'),
+    (4, 'XYZ Bank', 'Banking'),
+    (5, 'ABC Electronics', 'Electronics Manufacturer'),
+    (1, 'ABC Bank', 'Banking');
+-- Inserting 15 dummy data into the Freedom_Fighter table
+INSERT INTO Freedom_Fighter (Passenger_ID, Fighter_Name, Award_Received)
+VALUES
+    (1, 'Abdul Karim', 'Bir Protik'),
+    (4, 'Ayesha Siddika', 'Bir Uttom'),
+    (7, 'Mohammad Ali', 'Bir Protik'),
+    (10, 'Nasir Uddin', 'Bir Uttom'),
+    (13, 'Salma Begum', 'Bir Protik'),
+    (2, 'Kamal Hasan', 'Bir Uttom'),
+    (5, 'Nurul Islam', 'Bir Protik'),
+    (8, 'Anjuman Ara', 'Bir Uttom'),
+    (11, 'Abdul Wahab', 'Bir Protik'),
+    (14, 'Nazma Begum', 'Bir Uttom'),
+    (3, 'Tariqul Islam', 'Bir Protik'),
+    (6, 'Farida Akter', 'Bir Uttom'),
+    (9, 'Jalal Uddin', 'Bir Protik'),
+    (12, 'Sadia Hossain', 'Bir Uttom'),
+    (15, 'Mahmudul Hasan', 'Bir Protik');
+
+-- Inserting 15 dummy data into the Other table
+INSERT INTO Other (Passenger_ID, Descriptions)
+VALUES
+    (2, 'Frequent traveler and enthusiast'),
+    (7, 'Loves reading legal journals'),
+    (3, 'Tech enthusiast'),
+    (11, 'Financial analyst by profession'),
+    (9, 'Engineering graduate with a passion for innovation'),
+    (5, 'Physics researcher and professor'),
+    (14, 'Software engineer with a focus on AI'),
+    (1, 'Accountant at a leading bank'),
+    (15, 'Finance and economics specialist'),
+    (13, 'Economic researcher and analyst'),
+    (4, 'Finance professional with expertise in banking'),
+    (10, 'Business mogul overseeing a diversified group'),
+    (6, 'Medical practitioner and surgeon'),
+    (8, 'Legal expert with a focus on corporate law'),
+    (12, 'Software developer in a tech company');
+  
+-- Inserting 15 dummy data into the Bus_Routes table
+INSERT INTO Bus_Routes (Starting_Point, Destination, Distance, Total_Fare)
+VALUES
+    ('Dhaka', 'Chittagong', 243, 800.00),
+    ('Dhaka', 'Sylhet', 290, 950.00),
+    ('Chittagong', 'Cox''s Bazar', 152, 600.00),
+    ('Dhaka', 'Rajshahi', 250, 900.00),
+    ('Sylhet', 'Dhaka', 290, 950.00),
+    ('Rajshahi', 'Dhaka', 250, 900.00),
+    ('Chittagong', 'Sylhet', 320, 1050.00),
+    ('Chittagong', 'Dhaka', 243, 800.00),
+    ('Sylhet', 'Chittagong', 320, 1050.00),
+    ('Rajshahi', 'Khulna', 175, 700.00),
+    ('Khulna', 'Rajshahi', 175, 700.00),
+    ('Dhaka', 'Barisal', 200, 800.00),
+    ('Barisal', 'Dhaka', 200, 800.00),
+    ('Sylhet', 'Rajshahi', 310, 1000.00),
+    ('Chittagong', 'Barisal', 280, 950.00);
+
+-- Inserting 15 dummy data into the Buses table
+INSERT INTO Buses (Seating_capacity, Model)
+VALUES
+    (40, 'Volvo A/C Coach'),
+    (30, 'Hino Luxury Bus'),
+    (50, 'Suzuki Mini Bus'),
+    (35, 'Toyota Coaster'),
+    (45, 'Nissan Civilian'),
+    (40, 'Isuzu Luxury Bus'),
+    (30, 'Tata Minibus'),
+    (50, 'Mitsubishi Rosa'),
+    (35, 'Hyundai Universe'),
+    (45, 'Ashok Leyland Viking'),
+    (40, 'Mercedes-Benz Sprinter'),
+    (30, 'Fuso Rosa'),
+    (50, 'Scania Touring'),
+    (35, 'Yutong ZK6107HA'),
+    (45, 'Neoplan Cityliner');
+
+-- Inserting 15 dummy data into the Bus_Stops table
+INSERT INTO Bus_Stops (Name, Location)
+VALUES
+    ('Kamalapur Bus Terminal', 'Dhaka'),
+    ('Sadar Ghat Bus Terminal', 'Chittagong'),
+    ('Sylhet Bus Stand', 'Sylhet'),
+    ('Rajshahi Bus Depot', 'Rajshahi'),
+    ('Khulna Bus Terminal', 'Khulna'),
+    ('Barisal Bus Stop', 'Barisal'),
+    ('Cox''s Bazar Bus Terminal', 'Cox''s Bazar');
+
+-- Inserting 15 dummy data into the Bus_Schedule table
+INSERT INTO Bus_Schedule (Departure_Time, Arrival_Time, Route_number)
+VALUES
+    ('2023-10-10 08:00:00', '2023-10-10 16:00:00', 1),
+    ('2023-10-11 09:30:00', '2023-10-11 17:30:00', 2),
+    ('2023-10-12 07:30:00', '2023-10-12 15:30:00', 3),
+    ('2023-10-13 10:00:00', '2023-10-13 18:00:00', 4),
+    ('2023-10-14 08:30:00', '2023-10-14 16:30:00', 5),
+    ('2023-10-15 09:00:00', '2023-10-15 17:00:00', 6),
+    ('2023-10-16 07:00:00', '2023-10-16 15:00:00', 7),
+    ('2023-10-17 10:30:00', '2023-10-17 18:30:00', 8),
+    ('2023-10-18 08:15:00', '2023-10-18 16:15:00', 9),
+    ('2023-10-19 09:45:00', '2023-10-19 17:45:00', 10),
+    ('2023-10-20 07:45:00', '2023-10-20 15:45:00', 11),
+    ('2023-10-21 10:15:00', '2023-10-21 18:15:00', 12),
+    ('2023-10-22 08:45:00', '2023-10-22 16:45:00', 13),
+    ('2023-10-23 09:15:00', '2023-10-23 17:15:00', 14),
+    ('2023-10-24 07:15:00', '2023-10-24 15:15:00', 15);
+
+-- Inserting 15 dummy data into the Ticket_Types table
+INSERT INTO Ticket_Types (Type_Name)
+VALUES
+    ('Standard'),
+    ('VIP'),
+    ('Student'),
+    ('Economy'),
+    ('Executive'),
+    ('Business Class'),
+    ('Luxury'),
+    ('Deluxe'),
+    ('First Class'),
+    ('Premium'),
+    ('Senior Citizen'),
+    ('Group Discount'),
+    ('Family Package'),
+    ('Special Event'),
+    ('Round Trip');
+
+-- Inserting 15 dummy data into the Payment_Method table
+INSERT INTO Payment_Method (Method_Name)
+VALUES
+    ('Cash'),
+    ('Credit Card'),
+    ('Mobile Banking'),
+    ('Bank Transfer'),
+    ('e-Wallet'),
+    ('Online Payment'),
+    ('Cheque'),
+    ('UPI'),
+    ('PayPal'),
+    ('Net Banking'),
+    ('Debit Card'),
+    ('Cryptocurrency'),
+    ('Digital Wallet'),
+    ('Apple Pay'),
+    ('Google Pay');
+
+-- Inserting 15 dummy data into the Discount table
+INSERT INTO Discount (Discount_Type, Amount)
+VALUES
+    ('Early Bird', 100.00),
+    ('Senior Citizen', 50.00),
+    ('Student Discount', 75.00),
+    ('Group Discount', 80.00),
+    ('Family Discount', 70.00),
+    ('Weekend Special', 90.00),
+    ('Frequent Traveler', 60.00),
+    ('Senior Citizen', 45.00),
+    ('Student Discount', 70.00),
+    ('Group Discount', 75.00),
+    ('Family Discount', 65.00),
+    ('Weekend Special', 85.00),
+    ('Frequent Traveler', 55.00),
+    ('Round Trip', 120.00),
+    ('Special Event', 110.00);
+
+-- Inserting 15 dummy data into the Tickets table
+INSERT INTO Tickets (Issue_Date, Passenger_id, Type_id, Pay_method_id, Bus_number, Schedule_id, Discount_id)
+VALUES
+    ('2023-10-09', 1, 1, 2, 1, 1, 1),
+    ('2023-10-09', 2, 2, 3, 2, 2, 2),
+    ('2023-10-09', 3, 1, 1, 3, 3, 3),
+    ('2023-10-10', 4, 3, 2, 4, 4, 4),
+    ('2023-10-10', 5, 4, 3, 5, 5, 5),
+    ('2023-10-11', 6, 5, 1, 6, 6, 6),
+    ('2023-10-11', 7, 1, 2, 7, 7, 7),
+    ('2023-10-12', 8, 2, 3, 8, 8, 8),
+    ('2023-10-12', 9, 3, 1, 9, 9, 9),
+    ('2023-10-13', 10, 4, 2, 10, 10, 10),
+    ('2023-10-13', 11, 5, 3, 11, 11, 11),
+    ('2023-10-14', 12, 1, 1, 12, 12, 12),
+    ('2023-10-14', 13, 2, 2, 13, 13, 13),
+    ('2023-10-15', 14, 3, 3, 14, 14, 14),
+    ('2023-10-15', 15, 4, 1, 15, 15, 15);
+
+-- Inserting 15 dummy data into the Journey_History table
+INSERT INTO Journey_History (Past_trip, Date, Ticket_details, Passenger_id)
+VALUES
+    ('Dhaka to Chittagong', '2023-10-10', 'Ticket: Standard', 1),
+    ('Dhaka to Sylhet', '2023-10-11', 'Ticket: VIP', 2),
+    ('Chittagong to Cox''s Bazar', '2023-10-10', 'Ticket: Standard', 1),
+    ('Dhaka to Rajshahi', '2023-10-13', 'Ticket: Economy', 4),
+    ('Sylhet to Dhaka', '2023-10-15', 'Ticket: Executive', 6),
+    ('Rajshahi to Khulna', '2023-10-19', 'Ticket: Business Class', 10),
+    ('Chittagong to Sylhet', '2023-10-14', 'Ticket: Standard', 1),
+    ('Chittagong to Dhaka', '2023-10-11', 'Ticket: VIP', 2),
+    ('Sylhet to Chittagong', '2023-10-15', 'Ticket: Economy', 4),
+    ('Rajshahi to Khulna', '2023-10-19', 'Ticket: Executive', 6),
+    ('Dhaka to Barisal', '2023-10-20', 'Ticket: Business Class', 10),
+    ('Barisal to Dhaka', '2023-10-24', 'Ticket: Luxury', 14),
+    ('Sylhet to Rajshahi', '2023-10-23', 'Ticket: Deluxe', 13),
+    ('Chittagong to Barisal', '2023-10-22', 'Ticket: First Class', 12),
+    ('Dhaka to Sylhet', '2023-10-18', 'Ticket: Premium', 9);
+
+-- Inserting 15 dummy data into the Bus_Stations table
+INSERT INTO Bus_Stations (Station_Name, Location)
+VALUES
+    ('Kamalapur Bus Terminal', 'Dhaka'),
+    ('Sadar Ghat Bus Terminal', 'Chittagong'),
+    ('Sylhet Bus Stand', 'Sylhet'),
+    ('Rajshahi Bus Depot', 'Rajshahi'),
+    ('Khulna Bus Terminal', 'Khulna'),
+    ('Barisal Bus Stop', 'Barisal'),
+    ('Cox''s Bazar Bus Terminal', 'Cox''s Bazar'),
+    ('Jessore Bus Terminal', 'Jessore'),
+    ('Mymensingh Bus Stop', 'Mymensingh'),
+    ('Comilla Bus Depot', 'Comilla'),
+    ('Narayanganj Bus Terminal', 'Narayanganj'),
+    ('Bogra Bus Stand', 'Bogra'),
+    ('Savar Bus Terminal', 'Savar'),
+    ('Chandpur Bus Stop', 'Chandpur'),
+    ('Narsingdi Bus Depot', 'Narsingdi');
+
+-- Inserting 15 dummy data into the Refund table
+INSERT INTO Refund (Refund_Amount, Reason, Ticket_number)
+VALUES
+    (50.00, 'Cancelled trip', 2),
+    (25.00, 'Overcharged', 3),
+    (60.00, 'Change of plans', 4),
+    (30.00, 'Missed the bus', 5),
+    (70.00, 'Dissatisfied with service', 6),
+    (40.00, 'Delay in departure', 7),
+    (80.00, 'Refund request', 8),
+    (35.00, 'Service not as expected', 9),
+    (75.00, 'Emergency situation', 10),
+    (45.00, 'Bus cancellation', 11),
+    (90.00, 'Double booking', 12),
+    (55.00, 'Ticket not needed', 13),
+    (65.00, 'Wrong route', 14),
+    (85.00, 'Service disruption', 15);
+
+-- Inserting 15 dummy data into the Notification table
+INSERT INTO Notification (Message, Notification_type)
+VALUES
+    ('Your bus is arriving in 15 minutes.', 'Reminder'),
+    ('Special discount on VIP tickets this week.', 'Promotion'),
+    ('Service disruption due to weather conditions.', 'Alert'),
+    ('New bus route introduced: Dhaka to Jessore.', 'Announcement'),
+    ('Promo code: SAVE20 for 20% off your next trip.', 'Promotion'),
+    ('Route change: Chittagong to Sylhet now via Cox''s Bazar.', 'Announcement'),
+    ('Special offer for students: 10% off on all routes.', 'Promotion'),
+    ('Introducing e-Tickets for a contactless experience.', 'Announcement'),
+    ('Bus schedule update: Extended hours on weekends.', 'Announcement'),
+    ('VIP lounge access for VIP ticket holders.', 'Special Service'),
+    ('New bus stop added: Narayanganj Bus Terminal.', 'Announcement'),
+    ('Discount for senior citizens: 15% off on all routes.', 'Promotion'),
+    ('Service delay notice: Expect a 30-minute delay.', 'Alert'),
+    ('Family package: Special discount for group bookings.', 'Promotion'),
+    ('Service disruption: Temporary route change.', 'Alert');
+
+-- Inserting 15 dummy data into the Bus_Reservation table
+INSERT INTO Bus_Reservation (Date, Seat_Number, Ticket_number)
+VALUES
+    ('2023-10-09', 10, 1),
+    ('2023-10-09', 5, 2),
+    ('2023-10-10', 15, 3),
+    ('2023-10-11', 7, 4),
+    ('2023-10-12', 22, 5),
+    ('2023-10-13', 8, 6),
+    ('2023-10-14', 12, 7),
+    ('2023-10-15', 18, 8),
+    ('2023-10-16', 9, 9),
+    ('2023-10-17', 19, 10),
+    ('2023-10-18', 11, 11),
+    ('2023-10-19', 14, 12),
+    ('2023-10-20', 3, 13),
+    ('2023-10-21', 24, 14),
+    ('2023-10-22', 17, 15);
+
+-- Inserting 15 dummy data into the Seat table
+INSERT INTO Seat (Seat_Number, Bus_ID)
+VALUES
+    (1, 1),
+    (2, 1),
+    (3, 2),
+    (4, 2),
+    (5, 3),
+    (6, 3),
+    (7, 4),
+    (8, 4),
+    (9, 5),
+    (10, 5),
+    (11, 6),
+    (12, 6),
+    (13, 7),
+    (14, 7),
+    (15, 8);
